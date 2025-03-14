@@ -15,9 +15,8 @@ class Tasty:
     :param version: the Tasty version
     :param save_file: the Tasty save file
     """
-
     # make sure to do an __init__ method
-
+    #Hi Angelika
     def __init__(self):
         pass
 
