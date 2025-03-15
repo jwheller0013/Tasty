@@ -22,10 +22,18 @@ class Tasty:
     def __init__(self):
         pass
 
+    def clear(self):
+         # add a way to bring screen to default here
+         print("What would you like to do next?")
+         Tasty()
+
+    def exit(self):
+        pass # add exit functionality here. how would we exit a program in the terminal?
+
     def help(self):
 
         print("Tasty Help ")
-        print("What do you need help with?")
+        print("What do you need help with? Tasty has all the answers.")
 
         print("============================================================================")
         print("help                     ->        display this message")
@@ -42,7 +50,10 @@ class Tasty:
         print("save                     ->        save your current tasks")
         print("load                     ->        load a save file")
         print("clear                    ->        clear the screen")
-        
+
+
+
+
     def license(self):
         """
         Display the MIT License terms for Tasty.
@@ -73,15 +84,19 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 if __name__ == "__main__":
     tasty = Tasty()
+
     tasty.help()
     while True:
         command = input("Tasty> ")
         if command == "exit":
             pass # exit the program, how would you do this?
+                 # tasty.exit()
         elif command == "help":
             tasty.help()
         elif command == "license":
             tasty.license()
+        elif command == "clear":
+            tasty.clear()
         else:
             print("Unknown command")
 
