@@ -23,12 +23,8 @@ class Tasty:
         pass
 
     def clear(self):
-         # add a way to bring screen to default here
-         print("What would you like to do next?")
-         Tasty()
-
-    def exit(self):
-        pass # add exit functionality here. how would we exit a program in the terminal?
+         #add a way to clear the terminal. remember how we clear the terminal?
+        pass
 
     def help(self):
 
@@ -80,6 +76,8 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         """)
+    def exit(self):
+        pass # add exit functionality here. how would we exit a program in the terminal?
 
 
 if __name__ == "__main__":
