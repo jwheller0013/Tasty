@@ -23,10 +23,10 @@ class Tasty:
         pass
 
     def help(self):
-        """
-        Display a help message.
-        """
+
         print("Tasty Help ")
+        print("What do you need help with?")
+
         print("============================================================================")
         print("help                     ->        display this message")
         print("tasks                    ->        display all your tasks")
