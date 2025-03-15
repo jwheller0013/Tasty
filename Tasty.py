@@ -76,8 +76,8 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         """)
-    def exit(self):
-        pass # add exit functionality here. how would we exit a program in the terminal?
+
+
 
 
 if __name__ == "__main__":
@@ -87,14 +87,14 @@ if __name__ == "__main__":
     while True:
         command = input("Tasty> ")
         if command == "exit":
-            pass # exit the program, how would you do this?
-                 # tasty.exit()
+             # exit the program, how would you do this?
+                 exit()
         elif command == "help":
             tasty.help()
         elif command == "license":
             tasty.license()
         elif command == "clear":
-            tasty.clear()
+                tasty.clear()
         else:
             print("Unknown command")
 
