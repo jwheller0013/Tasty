@@ -23,6 +23,7 @@ class Tasty:
         pass
 
     def main(self):
+        task_list = ["Hi", "Bye"]
         while True:
             command = input("Tasty> ")
             if command == "exit":
@@ -34,6 +35,10 @@ class Tasty:
                 tasty.license()
             elif command == "clear":
                 tasty.clear()
+            elif command == "tasks":
+                for x in task_list:
+                    print(x)
+                #works but maybe should be a function just could not get one to work for it
             else:
                 print("Unknown command")
 
@@ -45,6 +50,7 @@ class Tasty:
             os.system('clear') #Mac for clear
 
         #works if you run in a terminal command window does not work in PyCharm
+
 
 
     def help(self):
