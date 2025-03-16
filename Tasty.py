@@ -38,8 +38,14 @@ class Tasty:
                 print("Unknown command")
 
     def clear(self):
-         #add a way to clear the terminal. remember how we clear the terminal?
-        pass
+        if os.name == 'nt':
+            os.system('cls') #windows for clear
+        else:
+            os.environ['TERM'] = 'xterm' #found this needed for macOS
+            os.system('clear') #Mac for clear
+
+        #works if you run in a terminal command window does not work in PyCharm
+
 
     def help(self):
 
