@@ -22,6 +22,21 @@ class Tasty:
     def __init__(self):
         pass
 
+    def main(self):
+        while True:
+            command = input("Tasty> ")
+            if command == "exit":
+                # exit the program, how would you do this?
+                exit()
+            elif command == "help":
+                tasty.help()
+            elif command == "license":
+                tasty.license()
+            elif command == "clear":
+                tasty.clear()
+            else:
+                print("Unknown command")
+
     def clear(self):
          #add a way to clear the terminal. remember how we clear the terminal?
         pass
@@ -82,20 +97,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 if __name__ == "__main__":
     tasty = Tasty()
+    tasty.main()
 
-    tasty.help()
-    while True:
-        command = input("Tasty> ")
-        if command == "exit":
-             # exit the program, how would you do this?
-                 exit()
-        elif command == "help":
-            tasty.help()
-        elif command == "license":
-            tasty.license()
-        elif command == "clear":
-                tasty.clear()
-        else:
-            print("Unknown command")
 
 #Hullo there!
